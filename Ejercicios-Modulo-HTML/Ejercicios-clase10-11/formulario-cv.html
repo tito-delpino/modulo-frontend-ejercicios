@@ -28,50 +28,45 @@
 
   <body>
     <header>
-      <h1>Ejercicios clase 10 Formularios</h1>
+      <h1>Ejercicios clase 11 Formularios</h1>
       <p><a href="index.html">👈 Volver atrás</a></p>
       <hr />
     </header>
     <main>
-      <h2>Formulario registro sencillo</h2>
-      <h3>Rellena los siguientes apartados</h3>
-      <!--Este fomulario no manda la informacion a ningun servidor ya que no existe 'registrar-usuario.txt'-->
-      <form action="registrar-usuario.txt" name="registro" method="get">
+      <h2>Formulario agregar CV</h2>
+      <h3>Usaremos label para los inputs</h3>
+      <hr />
+
+      <!-- Inputs para el ususario -->
+      <form action="#" method="get">
+        <h4>Rellena tu CV</h4>
         <p>
-          Nombre:
-          <input type="text" name="nombre" autofocus />
-        </p>
-        <p>
-          Apellidos:
-          <input type="text" name="apellidos" />
-        </p>
-        <p>
-          Correo:<br />
-          <input type="email" name="email" />
-        </p>
-        <p>
-          Perfil GitHub:<br />
-          <input type="url" name="perfil-github" />
-        </p>
-        <p>
-          Edad:<br />
-          <input type="number" name="edad" />
-        </p>
-        <p>
-          Fecha nacimiento:<br />
-          <input type="date" name="fecha-nacimiento" />
-        </p>
-        <p>
-          Password:<br />
-          <!--No usar este atributo con el metodo Get, solo con Post-->
-          <input type="password" name="password" maxlength="10" minlength="5" />
-        </p>
-        <p>
-          Telefono:<br />
-          <input type="tel" name="telefono" maxlength="9" />
+          <label for="name">Nombre</label><br />
+          <input type="text" name="nombre" id="name" />
         </p>
 
-        <button>Enviar</button>
+        <p>
+          <label for="lastname">Apellidos</label><br />
+          <input type="text" name="apellidos" id="lastname" size="50" />
+        </p>
+
+        <p>
+          <label for="password">Contraseña</label><br />
+          <input type="text" name="password" id="password" />
+        </p>
+
+        <p>
+          <label for="dni">DNI</label><br />
+          <input type="text" name="dni" id="dni" size="5" />
+        </p>
+
+        <p><br><br><br>
+          <label for="file">Agrega tu foto</label>
+          <input type="file" name="archivo" id="file" />
+        </p><br><br>
+
+        <input type="submit" value="Guardar y enviar cambios" />
+        <input type="reset" value="Borrar los datos introducidos" />
       </form>
     </main>
 

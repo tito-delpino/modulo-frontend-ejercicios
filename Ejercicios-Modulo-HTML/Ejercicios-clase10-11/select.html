@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 10 y 11</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Clase 11: Formularios" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@tito-delpino" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="faviconv-10.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejercicios clase 11 Formularios</h1>
+      <p><a href="index.html">👈 Volver atrás</a></p>
+      <hr />
+    </header>
+    <main>
+      <h2>Formularios, uso de select</h2>
+      <hr />
+
+      <!-- Inputs para el ususario -->
+      <h3>Cantidad de unidades del pedido</h3>
+      <!--Con el atributo select podemos seleccionar un elemento de una lista-->
+      <form action="#" method="get">
+        <label for="uni">Unidades del pedido</label>
+        <!-- required bloquea el envio de datos si no se selecciona algun iten de la lista -->
+        <select name="unidades" id="uni" required>
+          <option value="">-</option>
+          <option value="10">10 unidades</option>
+          <option value="20">20 unidades</option>
+          <!-- selected marca como predeterminada la opcion que se indique -->
+          <option selected value="30">30 unidades</option>
+          <option value="40">40 unidades</option>
+          <option value="50">50 unidades</option>
+        </select>
+        <hr />
+        <label for="size">Talla a elegir</label><br />
+        <!-- multiple muestra en pantalla la lista en modo visible y el size controla cuantas opciones mostrar a la vez-->
+        <select name="tallas" id="size" multiple size="2">
+          <option value="">-</option>
+          <option value="40">Talla 40</option>
+          <option value="41">Talla 41</option>
+          <option selected value="42">Talla 42</option>
+          <option value="43">Talla 43</option>
+          <option value="44">Talla 44</option>
+        </select>
+
+        <div>
+          <br />
+          <button>Enviar</button>
+        </div>
+      </form>
+    </main>
+
+    <!--Pie de pagina-->
+    <hr />
+    <footer>Web creada en VSCode &copy; con archivos HTML, tito-delpino-dev &reg;</footer>
+  </body>
+</html>

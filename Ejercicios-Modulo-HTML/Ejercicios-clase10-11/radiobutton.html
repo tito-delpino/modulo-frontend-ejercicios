@@ -28,50 +28,37 @@
 
   <body>
     <header>
-      <h1>Ejercicios clase 10 Formularios</h1>
+      <h1>Ejercicios clase 11 Formularios</h1>
       <p><a href="index.html">👈 Volver atrás</a></p>
       <hr />
     </header>
     <main>
-      <h2>Formulario registro sencillo</h2>
-      <h3>Rellena los siguientes apartados</h3>
-      <!--Este fomulario no manda la informacion a ningun servidor ya que no existe 'registrar-usuario.txt'-->
-      <form action="registrar-usuario.txt" name="registro" method="get">
+      <h2>Formularios, uso de radiobutton</h2>
+      <hr />
+
+      <!-- Inputs para el ususario -->
+      <h3>Marca unica y mas vendida en el mundo</h3>
+      <!-- Con el uso de radiobutton podemos seleccionar solo seleciconar una de las marcas-->
+
+      <form action="#" method="get">
         <p>
-          Nombre:
-          <input type="text" name="nombre" autofocus />
-        </p>
-        <p>
-          Apellidos:
-          <input type="text" name="apellidos" />
-        </p>
-        <p>
-          Correo:<br />
-          <input type="email" name="email" />
-        </p>
-        <p>
-          Perfil GitHub:<br />
-          <input type="url" name="perfil-github" />
-        </p>
-        <p>
-          Edad:<br />
-          <input type="number" name="edad" />
-        </p>
-        <p>
-          Fecha nacimiento:<br />
-          <input type="date" name="fecha-nacimiento" />
-        </p>
-        <p>
-          Password:<br />
-          <!--No usar este atributo con el metodo Get, solo con Post-->
-          <input type="password" name="password" maxlength="10" minlength="5" />
-        </p>
-        <p>
-          Telefono:<br />
-          <input type="tel" name="telefono" maxlength="9" />
+          <input type="radio" name="nike" id="nike" />
+          <label for="nike">Nike</label>
         </p>
 
-        <button>Enviar</button>
+        <p>
+          <input type="radio" name="adidas" id="adidas" />
+          <label for="adidas">Adidas</label>
+        </p>
+
+        <p>
+          <input type="radio" name="under-armour" id="under armour" />
+          <label for="under armour">Under Armour</label>
+        </p>
+
+        <div>
+          <button>Enviar</button>
+        </div>
       </form>
     </main>
 
