@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 12</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Clase 12: Tareas" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@tito-delpino" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="faviconv-12.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 12: Tarea 12.4</h1>
+      <p><a href="index.html"> 🔙 Volver atras</a></p>
+    </header>
+    <hr />
+
+    <main>
+      <h2>Informacion sobre producto</h2>
+      <!-- siempre que se solicite un archivo hay que indicar el metodo post con enctype "multipart/form-data" -->
+      <form action="" method="get">
+        <!-- datos personales-->
+        <fieldset>
+          <legend>Datos basicos</legend>
+
+          <!-- nombre -->
+          <label for="fullname">Nombre</label><br />
+          <input type="text" name="fullname" id="fullname" size="50" required />
+          <br /><br />
+
+          <!-- descripcion -->
+          <label for="description">Descripcion</label><br />
+          <textarea name="description" id="description" cols="50" rows="5"></textarea>
+          <br /><br />
+
+          <!-- foto -->
+          <label for="picture">Foto</label>
+          <input type="file" name="foto" id="picture" required />
+          <br /><br />
+
+          <!-- contador -->
+          <input type="checkbox" name="contador" id="contador" />
+          <label for="contador">Añadir contador de visitas</label>
+        </fieldset>
+
+        <!-- opciones -->
+        <fieldset>
+          <legend>Datos economicos</legend>
+          <label for="price">Precio</label>
+          <input type="text" name="precio" id="price" maxlength="4" size="1" />
+          € &emsp;
+          <label for="tax">Impuestos</label>
+          <select name="taxes" id="tax">
+            <option value="4">4%</option>
+            <option value="7">7%</option>
+            <option value="16">16%</option>
+            <option value="25">25%</option>
+          </select>
+          <br />
+
+          <p>
+            Promocion
+            <br />
+            <input type="radio" name="promo" value="0" id="ninguno" />
+            <label for="ninguno">Ninguno</label>
+          </p>
+          <p>
+            <input type="radio" name="promo" value="free" id="trans-free" />
+            <label for="trans-free">Transporte gratuito</label>
+          </p>
+          <p>
+            <input type="radio" name="promo" value="5%off" id="discount" />
+            <label for="discount">Descuento 5%</label>
+          </p>
+        </fieldset>
+
+        <!-- boton envio -->
+        <p>
+          <button>Enviar formulario</button>
+        </p>
+      </form>
+    </main>
+
+    <!--Pie de pagina-->
+    <br /><br />
+    <footer>Web creada en VSCode &copy; con archivos HTML, tito-delpino-dev &reg;</footer>
+  </body>
+</html>

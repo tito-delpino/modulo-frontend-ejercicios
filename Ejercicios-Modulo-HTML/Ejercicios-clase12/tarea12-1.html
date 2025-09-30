@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 12</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Clase 12: Tareas" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@tito-delpino" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="faviconv-12.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 12: Tarea 12.1</h1>
+      <p><a href="index.html"> 🔙 Volver atras</a></p>
+    </header>
+    <hr />
+
+    <main>
+      <h2>Formulario de Registro - Mi Web</h2>
+      <form action="" method="get">
+        <!-- nombre y apellidos -->
+        <p>
+          <label for="name">Nombre</label>
+          <input type="text" name="nombre" maxlength="50" id="name" required />
+        </p>
+        <p>
+          <label for="lastname">Apellidos</label>
+          <input type="text" name="apellidos" maxlength="50" id="lastname" required />
+        </p>
+        <!-- genero -->
+        <p>
+          Genero:
+          <input type="radio" name="sexo" id="man" value="man" required />
+          <label for="man">Hombre</label>
+
+          <input type="radio" name="sexo" id="woman" value="woman" />
+          <label for="woman">Mujer</label>
+        </p>
+        <!-- correo -->
+        <p>
+          <label for="email">Correo</label>
+          <input type="email" name="correo" id="email" required />
+        </p>
+        <!-- ubicacion -->
+        <label for="city">Ubicacion</label>
+        <select name="poblacion" id="city" required>
+          <option value="">-</option>
+          <option value="alicante">Alicante</option>
+          <option value="madrid">Madrid</option>
+          <option value="sevilla">Sevilla</option>
+          <option value="valencia">Valencia</option>
+        </select>
+        <!-- informacion adicional de usuario -->
+        <p>
+          <label for="description">Descripción</label><br />
+          <textarea name="description" id="description" cols="50" rows="5"></textarea>
+        </p>
+        <!-- informacion y condiciones -->
+        <p>
+          <input type="checkbox" name="recibir-informacion" id="send-information" checked />
+          <label for="send-information">Deseo recibir informacion sobre novedades y ofertas.</label>
+        </p>
+        <p>
+          <input type="checkbox" name="terminos" id="main-conditions" required />
+          <label for="main-conditions"
+            >Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de
+            datos.</label
+          >
+        </p>
+        <!-- boton envio -->
+        <p>
+          <button>Enviar formulario</button>
+        </p>
+      </form>
+    </main>
+    <!--Pie de pagina-->
+    <hr />
+    <footer>Web creada en VSCode &copy; con archivos HTML, tito-delpino-dev &reg;</footer>
+  </body>
+</html>
