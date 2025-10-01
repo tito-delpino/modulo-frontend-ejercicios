@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 14</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Clase 14: Imagenes" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@tito-delpino" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="faviconv-13.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 14: iframe youtube</h1>
+      <p><a href="index.html"> 🔙 Volver atras</a></p>
+    </header>
+    <hr />
+
+    <main>
+      <p>name permite crear enlaces dentro del iframe y no abrir una nueva pestaña, el link al tener el atributo target, iframe reconoce que tiene que abrir el iframe, no se pone src ya que lo toma del link o podemos usar un about:black que indica al navegador que habra algo que cargar pero aun no</p>
+      <ul>
+        <li><a href="https://es.wikipedia.org/wiki/HTML" target="myIframe">Cargar HTML en la Wikipedia</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/CSS" target="myIframe">Cargar CSS en la Wikipedia</a></li>
+      </ul>
+      <!-- atributo name enlaza con el atributo target del link <a> -->
+      <iframe src="about:blank" width="600" height="500" name="myIframe" frameborder="0"></iframe>
+    </main>
+
+    <!--Pie de pagina-->
+    <hr />
+    <footer>Web creada en VSCode &copy; con archivos HTML, tito-delpino-dev &reg;</footer>
+  </body>
+</html>
