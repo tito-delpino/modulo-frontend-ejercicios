@@ -28,19 +28,25 @@
 
   <body>
     <header>
-      <h1>Clase 14: iframe atributo name</h1>
+      <h1>Clase 14: archivo de video</h1>
       <p><a href="index.html"> 🔙 Volver atras</a></p>
     </header>
     <hr />
 
     <main>
-      <p>name permite crear enlaces dentro del iframe y no abrir una nueva pestaña, el link al tener el atributo target, iframe reconoce que tiene que abrir el iframe, no se pone src ya que lo toma del link o podemos usar un about:black que indica al navegador que habra algo que cargar pero aun no</p>
-      <ul>
-        <li><a href="https://es.wikipedia.org/wiki/HTML" target="myIframe">Cargar HTML en la Wikipedia</a></li>
-        <li><a href="https://es.wikipedia.org/wiki/CSS" target="myIframe">Cargar CSS en la Wikipedia</a></li>
-      </ul>
-      <!-- atributo name enlaza con el atributo target del link <a> -->
-      <iframe src="about:blank" width="600" height="500" name="myIframe" frameborder="0"></iframe>
+      <p>
+        son etiquetas semánticas específicas de HTML5, hechas para reproducir medios directamente en el navegadorcon
+        atributos propios(controls, autoplay, loop, muted, preload)
+      </p>
+      <!-- video -->
+      <video src="resources/mini-proyectos-backend.mp4" width="200" autoplay muted controls loop></video>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" width="300" muted controls poster="monster.jpg"></video>
+    
+    <!-- audio -->
+      <audio src="resources/mini-proyectos-backend.mp4" controls></audio>
+
+
+
     </main>
 
     <!--Pie de pagina-->
