@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 15</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Clase 15: Etiquetas interactivas" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@tito-delpino" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="faviconv-15.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+
+    <!-- importamos el script para poder usar el CKeditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.0.0/classic/ckeditor.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 15: Etiquetas interactivas</h1>
+      <p><a href="index.html"> 🔙 Volver atras</a></p>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Ejemplo editor wysiwyg, con ckeditor</h2>
+      <p>Muestra sobre el textarea las opciones para poder interacturar con los elementos escritos</p>
+
+      <textarea name="ejemplo-ckeditor" id="descripcion" placeholder="Escribe aqui lo que quieras, arriba veras la barra de comandos para poder editar el texto"></textarea>
+      <br />
+      
+    </main>
+    <!--Pie de pagina-->
+    <hr />
+    <footer>Web creada en VSCode &copy; con archivos HTML, tito-delpino-dev &reg;</footer>
+
+    <!-- inicializamos para poder ejecutar el tkeditor -->
+    <script>
+      ClassicEditor.create(document.querySelector("#descripcion")).catch((error) => {
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 15</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Clase 15: Etiquetas interactivas" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@tito-delpino" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="faviconv-15.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+
+    <!-- Para poder usar  a traves de html nencesitamos agregar jquery, el css y el js de select2 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Clase 15: Etiquetas interactivas</h1>
+      <p><a href="index.html"> 🔙 Volver atras</a></p>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Ejemplo elemento select2</h2>
+      <p>Muestra una lista en la que podemos interacturar previsualizando lo que buscamos</p>
+      <p>
+        Selecciona tu sistema
+        <select name="" id="sistemas">
+          <option value="">-</option>
+          <option value="linux">linux</option>
+          <option value="windows">windows</option>
+          <option value="macos">macos</option>
+          <option value="google">google</option>
+        </select>
+      </p>
+      <br />
+    </main>
+    <!--Pie de pagina-->
+    <hr />
+    <footer>Web creada en VSCode &copy; con archivos HTML, tito-delpino-dev &reg;</footer>
+
+    <!-- esto indica que el elemento sistemas lo convierta en select2 -->
+    <script>
+      $(document).ready(function () {
+        $("#sistemas").select2();
+      });
+    </script>
+  </body>
+</html>
