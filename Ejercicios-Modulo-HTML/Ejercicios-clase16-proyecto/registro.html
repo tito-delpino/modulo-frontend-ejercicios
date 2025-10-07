@@ -20,7 +20,7 @@
     <header>
       <p>
         <figure>
-          <img width="150px" src="imagen-portada.png" alt="imagen portada ConquerBlocks" />
+          <img width="150px" src="img/imagen-portada.png" alt="imagen portada ConquerBlocks" />
         </figure>
       </p>
       <nav>
@@ -37,7 +37,49 @@
     </header>
 
     <main>
-      
+      <h1>Formulario de registro</h1>
+      <p>Registrate para acceder a todo nuestro contenido</p>
+      <form action="post" enctype="multipart/form-data">
+        <p>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" maxlength="30" required />
+        </p>
+
+        <p>
+          <label for="birth-date">Fecha de nacimiento</label>
+          <input type="date" name="birth-date" id="birth-date" required />
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p>
+          <label for="address">Direccion</label>
+          <input type="text" name="address" id="address" maxlength="50" required />
+        </p>
+
+        <p>
+          <label for="url">Pagina web</label>
+          <input type="url" name="url" id="url" required />
+        </p>
+
+        <p>
+          <label for="photo">Foto</label>
+          <input type="file" name="photo" id="photo" />
+        </p>
+
+        <p>
+          <label for="bio">Biografia</label><br />
+          <textarea name="bio" id="bio" cols="50" rows="4"></textarea>
+        </p>
+
+        <p>
+          <button>Enviar</button>
+          <input type="reset" value="Borrar formulario">
+        </p>
+      </form>
 
       <!-- enlace para subir arriba -->
       <a href="#top">Subir</a>

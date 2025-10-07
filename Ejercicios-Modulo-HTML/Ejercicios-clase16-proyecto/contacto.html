@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <!-- menu de navegacion y logo -->
     <header>
       <p>
         <figure>
@@ -34,48 +35,52 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <!-- seccion de ultimos 2 cursos y enlace a todos los cursos -->
+      <!-- noticias destacadas -->
       <section>
-        <article>
-          <h1>Catalogo de cursos disponibles de ConquerBlocks</h1>
-          <p>Con ConquerBlocks podras formarte en las profesiones del futuro</p>
-          <h3>Curso desarrollo IA</h3>
+        <h2>Contacto</h2>
+        <p>Introduce tus datos y consulta, te responderemos lo mas rapido posible</p>
+        <form action="">
           <p>
-            Este curso te pondra a un nivel de conocimientos profesional, podras desarrollar las habilidades necesarias para
-            crear inteligencia artificial de la mano de los mejores profesionales del sector
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" maxlength="30" required />
           </p>
-          <a target="_blank" href="https://www.youtube.com/watch?v=tV7DKYdsG_4&t=8s">Ver curso</a>
-        </article>
 
-        <article>
-          <h3>Curso desarrollo Blockchain</h3>
           <p>
-            La formación donde aprenderás todo lo que necesitas para convertirte en programador especializado en tecnología
-            Blockchain, y multiplicar tu valor y salario en el mercado laboral.
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
           </p>
-          <a target="_blank" href="https://www.youtube.com/watch?v=kJ-S_WaZPtE&t=3s">Ver curso</a>
-        </article>
 
-        <article>
-          <h3>Curso desarrollo Full-Stack</h3>
           <p>
-            La formación donde aprenderás todo lo que necesitas para convertirte en Desarrollador Full-Stack, aunque partas
-            desde cero en el mundo de la programación.
+            <label for="consulta">Consulta</label><br />
+            <textarea name="consulta" id="consulta" cols="50" rows="4"></textarea>
           </p>
-          <a target="_blank" href="https://www.youtube.com/watch?v=Un4TDllqqB8&t=3s">Ver curso</a>
-        </article>
 
-        <article>
-          <h3>Curso de Ciber Seguridad</h3>
           <p>
-            El único programa educativo en habla hispana creado por los mejores Hackers y expertos en Cibserseguridad del
-            mundo.
+            <button>Enviar</button>
+            <input type="reset" value="Borrar formulario" />
           </p>
-          <a target="_blank" href="https://www.youtube.com/watch?v=D5ANMtVWNjk&t=2s">Ver curso</a>
-        </article>
+        </form>
       </section>
+      <section>
+        <h2>Puedes visitarnos en nuestras instalaciones</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.673562636075!2d-3.586383685469612!3d37.16046083341025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc968b98068d%3A0x7b44c83604c8cfe8!2sLim%C3%B3n%20Publicidad!5e0!3m2!1ses!2ses!4v1759816221896!5m2!1ses!2ses"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      
       <hr />
+      <p>No te pierdas ninguna de nuestras noticias creando cuenta <a href="registro.html">aqui</a></p>
+      <p>Si ya eres miembro, <a href="login.html">login</a></p>
+
+      <!-- enlace para subir arriba -->
       <a href="#top">Subir</a>
     </main>
 

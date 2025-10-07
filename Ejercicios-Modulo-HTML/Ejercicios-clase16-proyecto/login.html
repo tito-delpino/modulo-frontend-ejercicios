@@ -16,12 +16,12 @@
   </head>
 
   <body>
+    <!-- menu de navegacion y logo -->
     <header>
       <p>
         <figure>
           <img width="150px" src="img/imagen-portada.png" alt="imagen portada ConquerBlocks" />
         </figure>
-        <strong>Academia ConquerBlocks | Master en desarrollo Fullstack</strong>
       </p>
       <nav>
         <ul>
@@ -35,14 +35,30 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>Aviso legal</h1>
-      <p>Actualizado por última vez el 6 de Octubre de 2025.</p>
-      <p>Información en cumplimiento de la normativa de protección de datos personales a nivel internacional.</p>
-      <p>Empresa, número NO8376Al en Emiratos Árbes Unidos.</p>
-      <p>Dirección postal : Al Shmookh Business Center M 1003, One UAQ, UAQ Free Trade Zone, Umm Al Quwain, U.A.E.</p>
-      <p>Dirección de correo electrónico de contacto: enrique.romero@conquercrypto.com</p>
-      <p>Nuestra página web: www.conquercrypto.io</p>
+      <h1>Inicio de sesion</h1>
+      <p>Introduce tus datos para entrar en tu cuenta</p>
+      <form action="post" enctype="multipart/form-data">
+
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p>
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" required>
+        </p>
+
+        <p>
+          <button>Enviar</button>
+          <input type="reset" value="Borrar formulario">
+        </p>
+      </form>
+
+      <!-- enlace para subir arriba -->
+      <a href="#top">Subir</a>
     </main>
 
     <footer>
